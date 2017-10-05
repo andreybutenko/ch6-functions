@@ -2,7 +2,12 @@
 
 # Write a function `AddThree` that adds 3 to an input value
 AddThree <- function(number) {
-  return (number + 3)
+  if(typeof(number) == 'double' || typeof(number) == 'integer') {
+    return (number + 3)
+  }
+  else {
+    return (-1)
+  }
 }
 
 # Create a variable `ten` by passing 7 to your `AddThree` function
@@ -10,7 +15,12 @@ ten <- AddThree(7)
 
 # Write a function `FeetToMeters` that converts from feet to meters
 FeetToMeters <- function(feet) {
-  return (feet * 0.3)
+  if(typeof(feet) == 'double' || typeof(feet) == 'integer') {
+    return (feet * 0.3)
+  }
+  else {
+    return (-1)
+  }
 }
 
 # Create a variable `height.in.feet` that is your height in feet
